@@ -5,4 +5,9 @@ import vue from '@vitejs/plugin-vue';
 export default defineConfig({
   plugins: [vue()],
   base: '/tools-collection/',
+  build: {
+    assetsDir: 'assets',
+    emptyOutDir: true,
+    cssCodeSplit: false,
+  },
 });

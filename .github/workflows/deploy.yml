@@ -29,3 +29,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
+          cname: # 如果有自定义域名，可以在这里设置
+          force_orphan: true # 强制使用孤立分支，确保干净部署
